@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background: #1F232E;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    max-width: 1600px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background: #1F232E;
+    z-index: 1000;
+}
+
+.face {
+    display: flex;
+    width: 90%;
+    height: 100%;
+}
+
+.logo {
+    flex: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #fff;
+    color: #fff;
+    font-weight: 500px;
+}
+
+.menu-navbar {
+    flex: 60%;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #ffffffbb;
+}
+
+.link:hover {
+    color: #fff;
+    transition: .2s;
+    transform: scale(1.5);
+}
+
+.dW-contact {
+    flex: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.dw-add-menu {
+    display: none;
+}
+
+.dW-contact button {
+    padding: 10px 40px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #FFF;
+    border-style: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.fab {
+    color: #fff;
+    font-size: 40px;
+    border: 1px solid #00EEFD;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+main {
+    width: 100%;
+    padding-top: 80px;
+    max-width: 1600px;
+}
+
+.interface {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    max-height: 600px;
+}
+
+.dW-flock {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.dW-exibition {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+
+.title-exibition {
+    font-size: 30px;
+    color: #fff;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+
+
+.dW-exibition p {
+    font-size: 18px;
+    color: #fff;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.dW-button a button {
+    padding: 10px 40px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 40px 0;
+    background: transparent;
+    border-style: none;
+    color: #fff;
+    border: 1px solid #00EEFD;
+
+}
+
+.dW-button a {
+    display: inline-block;
+}
+
+.DW-skills {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dW-title-skills {
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+}
+
+.dW-title-skills h2 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.dW-conatiners {
+    width: 80%;
+    height: 300px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    display: flex
+}
+
+.dw-skills-cons {
+    display: flex;
+    gap: 5%;
+    width: 80%;
+}
+
+.icons-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+
+.dw-skills-cons .texts-span {
+    font-size: 14px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.porcento {
+    color: #fff;
+}
+
+.line-skillls {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.line90-skills {
+    width: 100%;
+    height: 10px;
+    background: #ffffff3b;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.span-line-skills {
+    height: 100%;
+    width: 90%;
+    background: #fff;
+    display: flex;
+}
+
+.section-interface {
+    width: 100%;
+    max-width: 1600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.dW-projects {
+    width: 90%;
+    height: 400px;
+}
+
+.projects-title {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+}
+
+.title-projects-h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.slides-projects {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.slides-items {
+    display: flex;
+    position: absolute;
+    gap: 1vw;
+    padding-right: 5%;
+}
+
+.slides-containers {
+    width: 300px;
+    height: 350px;
+    border: 1px solid #fff;
+}
+
+.interface-about {
+    width: 100%;
+    max-width: 1600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 600px;
+}
+
+.dw-about-face {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 350px;
+}
+
+.about-img,
+.containers-about {
+    height: 350px;
+}
+
+.about-img {
+    align-items: center;
+    justify-content: start;
+    display: flex;
+}
+
+.about-img img {
+    width: 60%;
+    border-radius: 50%;
+    background: #868685;
+}
+
+.containers-about {
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.containers-about h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.containers-about .text-about {
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1600px;
+    height: 200px;
+}
+
+
+@media (max-width : 1024px) {
+
+    .header {
+        max-width: 1024px;
+    }
+
+    .face {
+        width: 95%;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .logo p {
+        font-size: 12px;
+    }
+
+    .link {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .interface {
+        max-width: 1024px;
+    }
+
+    .dW-flock {
+        width: 95%;
+    }
+
+    .dW-button a button {
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+
+    .dW-exibition h1 {
+        font-size: 25px;
+    }
+
+    .dW-contact button {
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+
+    /* INTERFACE SECTION*/
+
+    .section-interface {
+        width: 100%;
+        max-width: 1024px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 500px;
+    }
+
+    .dW-projects {
+        height: 500px;
+    }
+
+
+    .interface-about {
+        width: 100%;
+        max-width: 1024px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 500px;
+    }
+
+
+    .dw-about-face {
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+    }
+
+    .about-img img {
+        width: 60%;
+    }
+
+    .about-img {
+        height: 400px;
+    }
+
+    .containers-about {
+        height: 400px;
+    }
+
+    .footer {
+        height: 1000px;
+    }
+}
+
+
+@media (max-width : 768px) {
+
+    .header {
+        height: 60px;
+        max-width: 768px;
+    }
+
+    .logo {
+        flex: 50%;
+    }
+
+    .menu-navbar {
+        position: fixed;
+        right: 0;
+        width: 0;
+        overflow: hidden;
+        background: #1F232E;
+        top: 60px;
+        height: 100%;
+        transition: .2s;
+    }
+
+    .activo-navbar {
+        width: 80%;
+        transition: .2s;
+    }
+
+    .navbar {
+        align-items: start;
+        justify-content: start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        justify-content: start;
+    }
+
+
+    .link {
+        height: 100px;
+        min-height: 50px;
+        width: 80vw;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 5%;
+        padding:0 ;
+    }
+
+    .link:hover {
+        transform: none;
+        background: #00EEFD;
+    }
+
+    .dW-contact {
+        display: none;
+    }
+
+    .dw-add-menu {
+        display: flex;
+        flex: 50%;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .dw-add-menu .button-add-menu {
+        background: transparent;
+        border-style: none;
+    }
+
+    .line {
+        width: 25px;
+        height: 4px;
+        display: flex;
+        background: #fff;
+        margin: 2px auto;
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+    .interface {
+        max-width: 768px;
+        max-height: 700px;
+        padding-top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dW-flock {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+    }
+
+    .dW-exibition {
+        width: 100%;
+        height: 50%;
+        align-items: start;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dW-exibition h1 {
+        font-size: 20px;
+    }
+
+    .dW-exibition p {
+        font-size: 15px;
+    }
+
+    .DW-skills {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .dW-title-skills {
+        width: 100%;
+    }
+
+    .dW-conatiners {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .dw-skills-cons {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 10%;
+    }
+
+    .fab {
+        font-size: 40px;
+    }
+
+
+
+    .section-interface {
+        max-width: 768px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .interface-about {
+        width: 100%;
+        max-width: 768px;
+        height: 700px;
+    }
+
+    .dw-about-face {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        border: 1px solid red;
+    }
+
+    .about-img {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 300px;
+
+    }
+
+    .about-img img {
+        width: 60%;
+    }
+
+    .containers-about {
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-self: center;
+        padding-left: 0;
+    }
+
+}
