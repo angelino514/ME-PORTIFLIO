@@ -37,6 +37,13 @@ body {
     top: 0;
     background: #1F232E;
     z-index: 1000;
+    transition: .2s;
+    opacity: 0;
+}
+
+.h_activo {
+    opacity: 1;
+    transition: .2s;
 }
 
 .face {
@@ -179,9 +186,6 @@ main {
 
 }
 
-.dW-button a {
-    display: inline-block;
-}
 
 .DW-skills {
     display: flex;
@@ -200,8 +204,22 @@ main {
 }
 
 .dW-title-skills h2 {
-    font-size: 18px;
+    font-size: 22px;
     color: #fff;
+}
+
+.last-one {
+    opacity: 0;
+    transition: 2s;
+    transform: translateX(-100px);
+    filter: blur(5px);
+}
+
+.activo {
+    opacity: 1;
+    transition: 1s;
+    transform: translateX(0);
+        filter: blur(0);
 }
 
 .dW-conatiners {
@@ -217,6 +235,18 @@ main {
     display: flex;
     gap: 5%;
     width: 80%;
+}
+
+.dw-skills-cons :nth-child(2){
+    transition-delay: 400ms;
+}
+
+.dw-skills-cons :nth-child(3){
+    transition-delay: 700ms;
+}
+
+.dw-skills-cons :nth-child(4){
+    transition-delay: 900ms;
 }
 
 .icons-skills {
@@ -666,10 +696,11 @@ main {
         font-size: 14px;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        margin-top: 1vw;
+        justify-content: start;
+        margin-top: 2vw;
         padding: 0;
-        margin-left: -20vw;
+        margin-left: 20vw;
+        padding-left: 5%;
     }
 
     .link:hover {
@@ -879,6 +910,11 @@ main {
     .send-message {
         width: 100%;
     }
+
+
+    .send-message textarea {
+        width: 100%;
+    } 
 
     .links-redes {
         width: 100%;
