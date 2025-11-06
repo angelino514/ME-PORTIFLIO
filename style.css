@@ -13,6 +13,8 @@ html {
     width: 100%;
     overflow-y: scroll;
     scrollbar-width: none;
+    scroll-behavior: smooth;
+    transition: 1s;
 }
 
 body {
@@ -161,8 +163,7 @@ main {
 .title-exibition {
     font-size: 30px;
     color: #fff;
-    margin: 10px 0;
-    overflow: hidden;
+    margin: 30px 0;
 }
 
 
@@ -174,7 +175,7 @@ main {
     color: #fff;
 }
 
-.dW-button a button {
+.enter {
     padding: 10px 40px;
     font-size: 15px;
     cursor: pointer;
@@ -184,6 +185,10 @@ main {
     color: #fff;
     border: 1px solid #00EEFD;
 
+}
+
+.enter:hover {
+    background: #00ecfd1e;
 }
 
 
@@ -206,20 +211,21 @@ main {
 .dW-title-skills h2 {
     font-size: 22px;
     color: #fff;
+    margin: 30px 0;
 }
 
 .last-one {
     opacity: 0;
-    transition: 2s;
-    transform: translateX(-100px);
+    transform: translateY(20px);
     filter: blur(5px);
+    transition: 2s all ease;
 }
 
 .activo {
     opacity: 1;
-    transition: 1s;
-    transform: translateX(0);
-        filter: blur(0);
+      transition: 2s all ease;
+    transform: translateY(0);
+    filter: blur(0);
 }
 
 .dW-conatiners {
@@ -312,7 +318,11 @@ main {
 
 .dW-projects {
     width: 90%;
-    height: 400px;
+    height: 600px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects-title {
@@ -357,6 +367,7 @@ main {
     justify-content: center;
     display: flex;
     height: 600px;
+    margin-top: 30px;
 }
 
 .dw-about-face {
@@ -410,6 +421,7 @@ main {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .dW-footer {
@@ -783,7 +795,7 @@ main {
     }
 
     .dW-exibition p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .DW-skills {
@@ -925,9 +937,14 @@ main {
         justify-content: center;
         display: flex;
     }
-
 }
 
+
+@media (max-width : 768px) and (orientation: landscape) {
+    .interface {
+        height: 500px;
+    }
+}
 
 
 @media (max-width : 600px) {
@@ -1066,5 +1083,18 @@ main {
 
     .link {
         height: 40px;
+    }
+
+    .dW-flock {
+        height: 600px;
+    }
+
+
+    .interface {
+        height: 500px;
+        padding-top: 60px;
+    }
+    .dW-exibition {
+        height: 500px;
     }
 }
