@@ -1531,15 +1531,15 @@ nav.scrolled {
 
 /* Specific portfolio images */
 .portfolio-image.ecommerce {
-    background-image: url('images/portfolio-ecommerce.jpg');
+    background-image: url('portfolio-ecommerce.jpg');
 }
 
 .portfolio-image.analytics {
-    background-image: url('images/portfolio-analytics.jpg');
+    background-image: url('portfolio-analytics.jpg');
 }
 
 .portfolio-image.music {
-    background-image: url('images/portfolio-music.jpg');
+    background-image: url('portfolio-music.jpg');
 }
 
 .portfolio-content {
