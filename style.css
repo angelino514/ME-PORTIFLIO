@@ -850,8 +850,8 @@ nav.scrolled {
 
 .skills-circle {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     animation: rotate-slow 30s linear infinite;
 }
 
@@ -867,8 +867,8 @@ nav.scrolled {
 
 .skill-node {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -1378,6 +1378,32 @@ nav.scrolled {
         max-width: 1024px;
         overflow-x: hidden;
     }
+
+    .skills-center {
+         width: 60px;
+         height: 60px;
+    }
+
+    .skills-center i {
+        font-size: 1.9rem;
+    }
+
+    .skills-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .skill-node {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skill-icon i {
+        color: var(--accent-blue-dark);
+        font-size: 1.9rem;
+    }
+
 
 }
 
@@ -1899,17 +1925,21 @@ footer {
     }
 
     .skills-circle {
-        width: 150px;
-        height: 150px;
+        width: 190px;
+        height: 190px;
     }
 
     .skill-node {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
 
-    .skill-node .skill-icon {
+    .skill-node i {
         font-size: 1.5rem;
+    }
+
+    .skill-icon i {
+         font-size: 1.5rem;
     }
 
     .skill-node .skill-name {
@@ -2015,6 +2045,27 @@ footer {
     .about-image {
         width: 200px;
         height: 200px;
+    }
+}
+
+@media ( max-width : 300px ) {
+    html {
+        font-size: 12px;
+    }
+
+    .skills-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills-center {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-node {
+        width: 60px;
+        height: 60px;
     }
 }
 
